@@ -8,6 +8,7 @@ const createAppStore = () => {
   // Подключите корневой редьюсер
   // Скорее всего вы захотите подключить Redux DevTools
   // Не забудьте подключить sagaMiddleware
+  const store = createStore()
 };
 
 export default createAppStore;
