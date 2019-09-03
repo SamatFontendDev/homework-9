@@ -16,8 +16,8 @@ class Router extends PureComponent {
             <BrowserRouter>
                 <Switch>
                     <PrivateRoute path="/search" component={Search} />
-                    <Route path="/login" component={Login} />
-                    <Redirect from="*" to="/login" />
+                    <Route path="/" component={Login} />
+                    <Redirect from="*" to="/" />
                 </Switch>
             </BrowserRouter>
         )
