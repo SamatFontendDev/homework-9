@@ -11,7 +11,7 @@ class Followers extends PureComponent {
     // Если данные не были загружены - сообщите об этом пользователю
     if (isLoading) return <p>Идет загрузка...</p>
     
-    console.log(data);
+    if (!data) return <p>Нет информации о подписчиках</p>
     
     return (
       <div className={cx(styles.root, 't-followers')}>

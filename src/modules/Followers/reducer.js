@@ -13,7 +13,7 @@ const isLoading = handleActions({
 const data = handleActions({
     [fetchRequest]: () => [],
     [fetchSuccess]: (_state, action) => action.payload
-}, []);
+}, null);
 
 const error = handleActions({
     [fetchFailure]: (_state, action) => action.payload
